@@ -1,0 +1,39 @@
+# Environments & Secrets
+.env
+.env.local
+.env.*.local
+backend/.env
+frontend/.env.local
+
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+ENV/
+
+# Build artifacts
+dist/
+build/
+.cache/
+*.egg-info/
+.pytest_cache/
+
+# IDE / System
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+.DS_Store
+
+# Local storage databases
+backend/mindflow_data.json
+backend/mindflow_local.db
+backend/data/*.json
+backend/data/*.tmp
+!backend/data/.gitkeep
