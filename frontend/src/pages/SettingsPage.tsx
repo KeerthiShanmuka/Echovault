@@ -112,7 +112,7 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({
             <span className="text-slate-400 text-[10px] uppercase font-bold tracking-wider">FastAPI Backend</span>
             <div className="font-bold text-slate-900 flex items-center gap-1.5 pt-0.5">
               <span className={`w-2 h-2 rounded-full ${isBackendLive ? 'bg-emerald-500' : 'bg-amber-500'}`} />
-              {isBackendLive ? 'Online (:8000)' : 'Connecting...'}
+              {isBackendLive ? (import.meta.env.PROD ? 'Online' : 'Online (:8000)') : 'Connecting...'}
             </div>
           </div>
 

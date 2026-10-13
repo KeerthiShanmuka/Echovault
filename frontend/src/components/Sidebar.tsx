@@ -69,7 +69,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
             <div className={`w-2 h-2 rounded-full ${isBackendLive ? 'bg-emerald-500 animate-pulse' : 'bg-amber-500'}`} />
             <span>{isBackendLive ? 'FastAPI Live' : 'Backend Reconnecting'}</span>
           </div>
-          <span className="text-[10px] font-mono opacity-80">{isBackendLive ? ':8000' : 'Offline'}</span>
+          <span className="text-[10px] font-mono opacity-80">{isBackendLive ? (import.meta.env.PROD ? 'Cloud' : ':8000') : 'Offline'}</span>
         </div>
       </div>
 
